@@ -1,0 +1,399 @@
+/* styles.css pagina principal*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav#navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav#navbar ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+
+}
+
+section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+button {
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Banner Styles */
+.hero {
+    height: 100vh; /* Toma el 100% de la altura del viewport */
+    background-image: url('img/9.reuniononline.jpg'); /* Sustituir con la URL de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Superposición oscura para resaltar el texto */
+}
+
+.hero-content {
+    z-index: 1; /* Para que el contenido esté por encima de la superposición oscura */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.hero-btn {
+    background-color: #0084ff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #0056b3;
+}
+
+/* styles.css pagina contactos*/
+ 
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/*pagina servicios*/
+
+ .t{
+    color: black;
+    text-decoration: none;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.servicio {
+    margin-bottom: 20px;
+}
+
+.servicio h3 {
+    color: #28a745;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+.testimonio {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 5px solid #28a745;
+    background-color: #f9f9f9;
+}
+
+.testimonio p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonio h4 {
+    text-align: right;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+  
+
+#galeria {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.imagenes-galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.imagenes-galeria img {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.imagenes-galeria img:hover {
+    transform: scale(1.05);
+}
+
+.testimonio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.testimonio img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.header-testimonios {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.header-testimonios img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-testimonios .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Efecto de oscurecimiento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header-testimonios h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f5f5f5;
+    height: auto; /* Ajusta la altura según el contenido */
+}
+
+.header-contacto img {
+    width: 200px; /* Tamaño fijo de la imagen */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para un diseño moderno */
+}
+
+.header-contacto .overlay {
+    flex: 1;
+    padding-left: 20px;
+    color: #333; /* Texto oscuro para contraste */
+}
+
+.header-contacto h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header-contacto p {
+    font-size: 1rem;
+    margin: 10px 0 0;
+}
+
+
+.header-contacto h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header-contacto p {
+    font-size: 1rem;
+    margin: 10px 0 0;
+}
+
+
+.header-contacto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-contacto p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+ 
+.imagen-contacto img {
+    width: 800px; /* Ancho de la imagen */
+    height: 600px; /* Altura de la imagen */
+    object-fit: cover; /* Recorta la imagen para mantener la proporción */
+    border-radius: 8px; /* Opcional: Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: Sombra */
+}
+
